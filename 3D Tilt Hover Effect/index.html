@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>3D Tilt hover effect</title>    
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="imgbx">
+                <img src="images/1.jpg">
+            </div>
+            <div class="contentbx">
+                <h2>Tilt Box Hover Effect</h2>
+                <p>Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbx">
+                <img src="images/2.jpg">
+            </div>
+            <div class="contentbx">
+                <h2>Tilt Box Hover Effect</h2>
+                <p>Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400
+	});
+    </script>
+</body>
+</html>
